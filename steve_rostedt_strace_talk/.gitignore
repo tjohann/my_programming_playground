@@ -1,2 +1,5 @@
 hello
 hello_2
+hello_cpp
+*.i
+*.s

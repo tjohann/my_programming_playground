@@ -7,16 +7,19 @@ https://www.youtube.com/watch?v=JRyrhsx-L5Y
 following the talk
 ------------------
 
-gcc -Wall -o hello hello.c
+gcc -save-temps -Wall -Wextra -o hello hello.c
 objdump -d hello
 
 ELF ... executable and linkable format :-) ...
 
 
-gcc -Wall -o hello_2 hello_2.c
+gcc -save-temps -Wall -Wextra -o hello_2 hello_2.c
 ..
 
 
+With -save-temps we will preserve the temporary files. Also the .o file is the output before linkage.
+
+See hello_ccp and hello.cc for an c++ example.
 
 additional stuff
 ----------------
