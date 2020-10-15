@@ -10,5 +10,12 @@ Steve Rostedt Youtube Video about strace and co
 -----------------------------------------------
 
 Folder: ([steve_rostedt_strace_talk](steve_rostedt_strace_talk/README.md))
-Video: https://www.youtube.com/watch?v=JRyrhsx-L5Y
 Additional knowledge-sources: t.b.d.
+
+
+Seccomp (secure computing)
+--------------------------
+
+Folder: ([seccomp](seccomp/README.md))
+Additional knowledge-sources: t.b.d.
+

@@ -1,11 +1,14 @@
-# my simple programming playground
+# playground around seccomp
+#
+# starting points:
+# - https://lwn.net/Articles/656307/
+#
 
 MODULES = $(shell ls -d */ | cut -f1 -d'/')
 
 .PHONY: all
 all:
-	@echo "Pls go to the different folders, see also README.md"
-	@echo "Cheers :-)"
+	@echo "done :-)"
 
 .PHONY: clean
 clean:
