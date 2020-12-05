@@ -32,6 +32,13 @@ Folder: ([cgroups](cgroups/README.md))
 Additional knowledge-sources: t.b.d.
 
 
+c and cpp startup analysis
+--------------------------
+
+Folder: ([c_startup](c_startup/README.md))
+Additional knowledge-sources: see also book https://www.packtpub.com/product/hands-on-system-programming-with-linux/9781788998475
+
+
 FreeBSD
 =======
 

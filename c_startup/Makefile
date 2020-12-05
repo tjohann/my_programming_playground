@@ -1,11 +1,11 @@
-# playground around cgroups
+# c and cpp startup analysis
 #
 
 MODULES = $(shell ls -d */ | cut -f1 -d'/')
 
 .PHONY: all
 all:
-	@echo "done :-)"
+	gcc -v -o hello_world hello_world.c
 
 .PHONY: clean
 clean:
