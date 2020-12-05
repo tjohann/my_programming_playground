@@ -3,7 +3,7 @@ My programming playground
 
 This is my plaground for simple examples base on youtube videos or whatever comes into my mind. This could lead into *real* projects which then get it`s own repository.
 
-So don`t expect something useful other than simplest examples.
+So don`t expect something useful other than simplest examples/playgrounds.
 
 Linux
 =====
@@ -22,6 +22,13 @@ Seccomp (secure computing)
 --------------------------
 
 Folder: ([seccomp](seccomp/README.md))
+Additional knowledge-sources: t.b.d.
+
+
+cgroups (control groups)
+------------------------
+
+Folder: ([cgroups](cgroups/README.md))
 Additional knowledge-sources: t.b.d.
 
 
