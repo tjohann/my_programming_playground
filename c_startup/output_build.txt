@@ -7,7 +7,7 @@ Configured with: /builddir/gcc-9.3.0/configure --build=x86_64-unknown-linux-gnu 
 Thread model: posix
 gcc version 9.3.0 (GCC)
 COLLECT_GCC_OPTIONS='-v' '-o' 'hello_world' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/cc1 -quiet -v hello_world.c -quiet -dumpbase hello_world.c -mtune=generic -march=x86-64 -auxbase hello_world -version -o /tmp/cccIo8TS.s
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/cc1 -quiet -v hello_world.c -quiet -dumpbase hello_world.c -mtune=generic -march=x86-64 -auxbase hello_world -version -o /tmp/cceGeYgz.s
 GNU C17 (GCC) version 9.3.0 (x86_64-unknown-linux-gnu)
 	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
 
@@ -26,10 +26,10 @@ GNU C17 (GCC) version 9.3.0 (x86_64-unknown-linux-gnu)
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 500e6d52bb48facc56df0ab9bfbee9e2
 COLLECT_GCC_OPTIONS='-v' '-o' 'hello_world' '-mtune=generic' '-march=x86-64'
- as -v --64 -o /tmp/ccj0P5YT.o /tmp/cccIo8TS.s
+ as -v --64 -o /tmp/ccg4iiRx.o /tmp/cceGeYgz.s
 GNU assembler version 2.34 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.34
 COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
 COLLECT_GCC_OPTIONS='-v' '-o' 'hello_world' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccH7CbVP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o hello_world /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../.. /tmp/ccj0P5YT.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64/crtn.o
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccv88U9A.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o hello_world /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/crtbeginS.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../.. /tmp/ccg4iiRx.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/9.3.0/../../../../lib64/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'hello_world' '-mtune=generic' '-march=x86-64'

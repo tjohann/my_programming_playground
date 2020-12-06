@@ -1,4 +1,6 @@
 hello_world
+hello_test
+*.o
 *.i
 *.s
 *.ii

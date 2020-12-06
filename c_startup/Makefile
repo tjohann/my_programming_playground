@@ -1,13 +1,28 @@
-# c and cpp startup analysis
+#
+# c startup analysis
 #
 
 
-all: hello_world.c
+.PHONY: all
+all:
+	@echo "**** see Makefile for relevant build targets ****"
+
+build_stuff: hello_world.c
 	gcc -v -o hello_world hello_world.c
+
+linker_stuff: hello_test.c
+	gcc -c hello_test.c
+	objdump -d hello_test.o > output_objdump.txt
+	@echo "**** now build all ****"
+	gcc -Wall -Wextra -o hello_test hello_test.c
+	objdump -d hello_test > output_final_objdump.txt
 
 .PHONY: clean
 clean:
 	rm -f *~
-	rm hello_world
+	rm -f hello_world
+	rm -f hello_world.o
+	rm -f hello_test
+	rm -f hello_test.o
 
 distclean: clean
