@@ -11,7 +11,7 @@ Disassembly of section .init:
     100e:	74 02                	je     1012 <_init+0x12>
     1010:	ff d0                	callq  *%rax
     1012:	48 83 c4 08          	add    $0x8,%rsp
-    1016:	c3                   	retq   
+    1016:	c3                   	retq
 
 Disassembly of section .plt:
 
@@ -55,7 +55,7 @@ Disassembly of section .text:
     1086:	48 8d 0d 53 01 00 00 	lea    0x153(%rip),%rcx        # 11e0 <__libc_csu_init>
     108d:	48 8d 3d c1 00 00 00 	lea    0xc1(%rip),%rdi        # 1155 <main>
     1094:	ff 15 46 2f 00 00    	callq  *0x2f46(%rip)        # 3fe0 <__libc_start_main@GLIBC_2.2.5>
-    109a:	f4                   	hlt    
+    109a:	f4                   	hlt
     109b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
 
 00000000000010a0 <deregister_tm_clones>:
@@ -68,7 +68,7 @@ Disassembly of section .text:
     10bd:	74 09                	je     10c8 <deregister_tm_clones+0x28>
     10bf:	ff e0                	jmpq   *%rax
     10c1:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
-    10c8:	c3                   	retq   
+    10c8:	c3                   	retq
     10c9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
 
 00000000000010d0 <register_tm_clones>:
@@ -86,7 +86,7 @@ Disassembly of section .text:
     10fe:	74 08                	je     1108 <register_tm_clones+0x38>
     1100:	ff e0                	jmpq   *%rax
     1102:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
-    1108:	c3                   	retq   
+    1108:	c3                   	retq
     1109:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
 
 0000000000001110 <__do_global_dtors_aux>:
@@ -94,7 +94,7 @@ Disassembly of section .text:
     1117:	75 2f                	jne    1148 <__do_global_dtors_aux+0x38>
     1119:	55                   	push   %rbp
     111a:	48 83 3d ae 2e 00 00 	cmpq   $0x0,0x2eae(%rip)        # 3fd0 <__cxa_finalize@GLIBC_2.2.5>
-    1121:	00 
+    1121:	00
     1122:	48 89 e5             	mov    %rsp,%rbp
     1125:	74 0c                	je     1133 <__do_global_dtors_aux+0x23>
     1127:	48 8b 3d 0a 2f 00 00 	mov    0x2f0a(%rip),%rdi        # 4038 <__dso_handle>
@@ -102,9 +102,9 @@ Disassembly of section .text:
     1133:	e8 68 ff ff ff       	callq  10a0 <deregister_tm_clones>
     1138:	c6 05 11 30 00 00 01 	movb   $0x1,0x3011(%rip)        # 4150 <completed.7380>
     113f:	5d                   	pop    %rbp
-    1140:	c3                   	retq   
+    1140:	c3                   	retq
     1141:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
-    1148:	c3                   	retq   
+    1148:	c3                   	retq
     1149:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
 
 0000000000001150 <frame_dummy>:
@@ -118,7 +118,7 @@ Disassembly of section .text:
     1167:	e8 d4 fe ff ff       	callq  1040 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
     116c:	b8 00 00 00 00       	mov    $0x0,%eax
     1171:	5d                   	pop    %rbp
-    1172:	c3                   	retq   
+    1172:	c3                   	retq
 
 0000000000001173 <_Z41__static_initialization_and_destruction_0ii>:
     1173:	55                   	push   %rbp
@@ -138,8 +138,8 @@ Disassembly of section .text:
     11b1:	48 89 c7             	mov    %rax,%rdi
     11b4:	e8 77 fe ff ff       	callq  1030 <__cxa_atexit@plt>
     11b9:	90                   	nop
-    11ba:	c9                   	leaveq 
-    11bb:	c3                   	retq   
+    11ba:	c9                   	leaveq
+    11bb:	c3                   	retq
 
 00000000000011bc <_GLOBAL__sub_I_main>:
     11bc:	55                   	push   %rbp
@@ -148,9 +148,9 @@ Disassembly of section .text:
     11c5:	bf 01 00 00 00       	mov    $0x1,%edi
     11ca:	e8 a4 ff ff ff       	callq  1173 <_Z41__static_initialization_and_destruction_0ii>
     11cf:	5d                   	pop    %rbp
-    11d0:	c3                   	retq   
+    11d0:	c3                   	retq
     11d1:	66 2e 0f 1f 84 00 00 	nopw   %cs:0x0(%rax,%rax,1)
-    11d8:	00 00 00 
+    11d8:	00 00 00
     11db:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
 
 00000000000011e0 <__libc_csu_init>:
@@ -186,15 +186,15 @@ Disassembly of section .text:
     1236:	41 5d                	pop    %r13
     1238:	41 5e                	pop    %r14
     123a:	41 5f                	pop    %r15
-    123c:	c3                   	retq   
+    123c:	c3                   	retq
     123d:	0f 1f 00             	nopl   (%rax)
 
 0000000000001240 <__libc_csu_fini>:
-    1240:	c3                   	retq   
+    1240:	c3                   	retq
 
 Disassembly of section .fini:
 
 0000000000001244 <_fini>:
     1244:	48 83 ec 08          	sub    $0x8,%rsp
     1248:	48 83 c4 08          	add    $0x8,%rsp
-    124c:	c3                   	retq   
+    124c:	c3                   	retq

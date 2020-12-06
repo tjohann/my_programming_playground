@@ -1,15 +1,13 @@
 # c and cpp startup analysis
 #
 
-MODULES = $(shell ls -d */ | cut -f1 -d'/')
 
-.PHONY: all
-all:
+all: hello_world.c
 	gcc -v -o hello_world hello_world.c
 
 .PHONY: clean
 clean:
 	rm -f *~
-	for dir in $(MODULES); do (cd $$dir && $(MAKE) $@); done
+	rm hello_world
 
 distclean: clean
