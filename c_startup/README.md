@@ -11,7 +11,7 @@ build build related stuff
 
 See output_build.txt for content.
 For example the default configs used when build without any additional argumens like -Wall.
-Also the C runtime libraries (\*crt\*) and the gcc specific libs (lgcc\_s) are shown.
+Also the C runtime libraries (crt\*) and the gcc specific libs (lgcc\_s) are shown.
 See also https://gcc.gnu.org/onlinedocs/gccint/Collect2.html for more info about linker topics at startup.
 
 
@@ -38,7 +38,7 @@ build linking related stuff
 
 	make linker_stuff
 
-See output_objdump.txt and output_final_objdump.txt for content.
+See `output_objdump.txt` and `output_final_objdump.txt` for content.
 
 
 generation of output_objdump.txt file
@@ -50,6 +50,7 @@ The object file is generated with -c argument -> do not run linker.
 Output **without** linker run
 -----------------------------
 
+```hello_test.o
 hello_test.o:     file format elf64-x86-64
 
 
@@ -72,11 +73,12 @@ Disassembly of section .text:
   21:	c3                   	retq
 
 So this is the generated code with the 2 functions main and test. All addresses are relativ and not absolut like after running the linker.
-
+```
 
 Output **with** linker run
 --------------------------
 
+```hello_test
 hello_test:     file format elf64-x86-64
 
 
@@ -241,7 +243,7 @@ Disassembly of section .fini:
     11c4:	48 83 ec 08          	sub    $0x8,%rsp
     11c8:	48 83 c4 08          	add    $0x8,%rsp
     11cc:	c3                   	retq
-
+```
 
 So this is the generated code with the 2 functions main and test. All addresses are absolut because the linker runs and links/generates all additional functions needed to run the application on linux.
 
