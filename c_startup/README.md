@@ -248,10 +248,73 @@ Disassembly of section .fini:
 So this is the generated code with the 2 functions main and test. All addresses are absolut because the linker runs and links/generates all additional functions needed to run the application on linux.
 
 
-Analysis of differences
------------------------
-t.b.d.
+Addtional analysis of the results
+---------------------------------
 
+
+```start
+0000000000001050 <_start>:
+    1050:	31 ed                	xor    %ebp,%ebp
+    1052:	49 89 d1             	mov    %rdx,%r9
+    1055:	5e                   	pop    %rsi
+    1056:	48 89 e2             	mov    %rsp,%rdx
+    1059:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+    105d:	50                   	push   %rax
+    105e:	54                   	push   %rsp
+    105f:	4c 8d 05 5a 01 00 00 	lea    0x15a(%rip),%r8        # 11c0 <__libc_csu_fini>
+    1066:	48 8d 0d f3 00 00 00 	lea    0xf3(%rip),%rcx        # 1160 <__libc_csu_init>
+    106d:	48 8d 3d d8 00 00 00 	lea    0xd8(%rip),%rdi        # 114c <main>
+    1074:	ff 15 66 2f 00 00    	callq  *0x2f66(%rip)        # 3fe0 <__libc_start_main@GLIBC_2.2.5>
+    107a:	f4                   	hlt
+    107b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+```
+
+The application loader from Linux calls _start, which then calls the libc start function (`__libc_start_main`). Note that the libc init and fini addresses loaded (called by `__libc_start_main`). See also `glibc/csu/libc-start.c`.
+
+```libc_start_main
+// SNIP
+define LIBC_START_MAIN __libc_start_main
+// SNIP
+STATIC int LIBC_START_MAIN (int (*main) (int, char **, char **
+                                         MAIN_AUXVEC_DECL),
+                            int argc,
+                            char **argv,
+#ifdef LIBC_START_MAIN_AUXVEC_ARG
+                            ElfW(auxv_t) *auxvec,
+#endif
+                            __typeof (main) init,
+                            void (*fini) (void),
+                            void (*rtld_fini) (void),
+                            void *stack_end)
+     __attribute__ ((noreturn));
+// SNIP
+```
+
+To see the AUXVEC content you can set the env variable LD_SHOW_AUXV to 1.
+
+```auxvec
+LD_SHOW_AUXV=1 ./minimal_prog
+AT_SYSINFO_EHDR:      0x7ffe2dd37000
+AT_HWCAP:             bfebfbff
+AT_PAGESZ:            4096
+AT_CLKTCK:            100
+AT_PHDR:              0x55898cd87040
+AT_PHENT:             56
+AT_PHNUM:             11
+AT_BASE:              0x7fc67ea31000
+AT_FLAGS:             0x0
+AT_ENTRY:             0x55898cd88040
+AT_UID:               1000
+AT_EUID:              1000
+AT_GID:               1000
+AT_EGID:              1000
+AT_SECURE:            0
+AT_RANDOM:            0x7ffe2dc30b09
+AT_HWCAP2:            0x2
+AT_EXECFN:            ./minimal_prog
+AT_PLATFORM:          x86_64
+
+```
 
 
 additional stuff

@@ -36,7 +36,10 @@ c and cpp startup analysis
 --------------------------
 
 Folder: ([c_startup](c_startup/README.md))
-Additional knowledge-sources: see also book https://www.packtpub.com/product/hands-on-system-programming-with-linux/9781788998475
+
+Additional knowledge-sources:
+see also book https://www.packtpub.com/product/hands-on-system-programming-with-linux/9781788998475
+see also website http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html 
 
 
 FreeBSD
