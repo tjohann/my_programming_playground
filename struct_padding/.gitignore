@@ -1,0 +1,6 @@
+struct_padding
+struct_padding_minimal
+*.o
+*.i
+*.s
+*.ii

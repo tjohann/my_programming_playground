@@ -11,11 +11,11 @@ Disassembly of section .text:
    b:	e8 00 00 00 00       	callq  10 <test+0x10>
   10:	b8 00 00 00 00       	mov    $0x0,%eax
   15:	5d                   	pop    %rbp
-  16:	c3                   	retq   
+  16:	c3                   	retq
 
 0000000000000017 <main>:
   17:	55                   	push   %rbp
   18:	48 89 e5             	mov    %rsp,%rbp
   1b:	e8 00 00 00 00       	callq  20 <main+0x9>
   20:	5d                   	pop    %rbp
-  21:	c3                   	retq   
+  21:	c3                   	retq

@@ -9,4 +9,4 @@ Disassembly of section .text:
    1:	48 89 e5             	mov    %rsp,%rbp
    4:	b8 00 00 00 00       	mov    $0x0,%eax
    9:	5d                   	pop    %rbp
-   a:	c3                   	retq   
+   a:	c3                   	retq

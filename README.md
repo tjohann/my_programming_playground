@@ -39,7 +39,14 @@ Folder: ([c_startup](c_startup/README.md))
 
 Additional knowledge-sources:
 see also book https://www.packtpub.com/product/hands-on-system-programming-with-linux/9781788998475
-see also website http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html 
+see also website http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html
+
+
+structs and padding
+-------------------
+
+Folder: ([struct_padding](struct_padding/README.md))
+Additional knowledge-sources: t.b.d.
 
 
 FreeBSD
