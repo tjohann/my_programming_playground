@@ -1,5 +1,5 @@
-some stuff around structs padding
-=================================
+Some stuff around struct padding
+================================
 
 The simple examples show the result of the generated code.
 
@@ -36,12 +36,12 @@ value of struct_c.a = 0
 Important to notice is that, although there`s a lot of additional space between struct_c.a and structc.b, the compiler stays in his type system:
 
 ```overrun
-	struct_c.a = 256;
+struct_c.a = 256;
 ```
 The value of struct_c.a is 0. So the expected overun.
 
 
-example with packed struct
+Example with packed struct
 --------------------------
 
 The compiler generated code from that struct has the size of 16 bytes, although the summary is only 12 bytes.
@@ -67,7 +67,7 @@ Disassembly of section .text:
   12:	c3                   	retq
 ```
 
-Now we use the attribute packed to force the packaging of both variables.
+Next we use the attribute packed to force the packaging of both variables.
 
 ```packed
 struct my_struct{
@@ -91,8 +91,54 @@ Disassembly of section .text:
 
 ```
 
-Now the size is 12 bytes.
+Now the size is 12 bytes. Important to notice is that the packed struct is not cache aligned anymor:
+```address_packet
+sizeof struct_d = 12
+sizeof of a = 8 and b = 4
+address 0x7ffdc35b3094 from my_struct.a
+address 0x7ffdc35b3098 from my_struct.b
 
+```
+For example:
+```next_struct
+struct my_struct_c {
+	uint8_t a;
+	uint64_t b;
+};
+```
+results in:
+```address_unpacket
+sizeof struct_c = 16
+sizeof of a = 1 and b = 8
+value of struct_c.a = 0
+address 0x7ffdc35b30c0 from c.a
+address 0x7ffdc35b30c8 from c.b
+```
+The start address of c.a starts with 0x...c0.
+The size of a is 1 byte.
+The start address of c.b starts with 0x...c8.
+The differenz of between c1 and c8 is filled with padding bytes.
+
+Note that the padding bytes could have any value:
+```access_first_padding_byte
+sizeof struct_c = 16
+sizeof of a = 1 and b = 8
+value of struct_c.a = 0
+address 0x7ffda5b1c000 from c.a
+address 0x7ffda5b1c008 from c.b
+address 0x7ffda5b1c001 from c.a + sizeof c.a
+show content of that address: 228
+```
+This shows the it makes sense to clear the struct before usage. So use memset() or bzero() to clear it:
+```after_clearing_struct
+sizeof struct_c = 16
+sizeof of a = 1 and b = 8
+value of struct_c.a = 0
+address 0x7fffc6f52730 from c.a
+address 0x7fffc6f52738 from c.b
+address 0x7fffc6f52731 from c.a + sizeof c.a
+show content of that address: 0
+```
 
 
 additional stuff
