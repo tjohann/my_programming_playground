@@ -106,7 +106,7 @@ struct my_struct_c {
 	uint64_t b;
 };
 ```
-results in:
+Results in:
 ```address_unpacket
 sizeof struct_c = 16
 sizeof of a = 1 and b = 8
