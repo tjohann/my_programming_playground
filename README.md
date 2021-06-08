@@ -48,6 +48,12 @@ structs and padding
 Folder: ([struct_padding](struct_padding/README.md))
 Additional knowledge-sources: t.b.d.
 
+time topics
+-------------------
+
+Folder: ([time topics](time_topics/README.md))
+Additional knowledge-sources: t.b.d.
+
 
 FreeBSD
 =======
