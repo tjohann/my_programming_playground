@@ -55,6 +55,21 @@ Folder: ([time topics](time_topics/README.md))
 Additional knowledge-sources: t.b.d.
 
 
+C#
+==
+
+C# stuff on Linux
+
+Folder: ([C# @ Linux topics](c#/README.md))
+
+Hello World
+-----------
+
+Folder: ([C# Hello World!](c#/hello_world/README.md))
+Additional knowledge-sources: t.b.d.
+
+
+
 FreeBSD
 =======
 
