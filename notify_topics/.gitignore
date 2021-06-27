@@ -1,0 +1,5 @@
+fanotiy_example
+*.o
+*.i
+*.s
+*.ii
