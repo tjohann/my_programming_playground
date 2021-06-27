@@ -1,14 +1,7 @@
-some stuff around ttenv topics
-==============================
+some stuff around time triggert stuff
+=====================================
 
 t.b.d.
-
-
-some stuff
-----------
-
-t.b.d.
-
 
 additional stuff
 ----------------
