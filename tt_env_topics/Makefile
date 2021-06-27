@@ -1,5 +1,5 @@
 #
-# some stuff around time topics
+# some stuff around ttenv topics
 #
 
 
@@ -7,13 +7,13 @@
 all:
 	@echo "**** see Makefile for relevant build targets ****"
 
-build_stuff: hello_time.c
-	gcc -Wall -Wextra -o hello_time hello_time.c
+build_stuff: hello_ttenv.c
+	gcc -Wall -Wextra -o hello_ttenv hello_ttenv.c
 
 .PHONY: clean
 clean:
 	rm -f *~
 	rm -f .*~
-	rm -f hello_time
+	rm -f hello_ttenv
 
 distclean: clean
