@@ -163,4 +163,3 @@ Disassembly of section .fini:
     11c4:	48 83 ec 08          	sub    $0x8,%rsp
     11c8:	48 83 c4 08          	add    $0x8,%rsp
     11cc:	c3                   	retq
-
