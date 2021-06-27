@@ -1,4 +1,5 @@
 fanotiy_example
+hello_poll
 *.o
 *.i
 *.s
