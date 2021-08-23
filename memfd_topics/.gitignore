@@ -1,0 +1,6 @@
+get_seals
+memfd_create
+*.o
+*.i
+*.s
+*.ii
