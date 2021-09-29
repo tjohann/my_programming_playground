@@ -48,11 +48,27 @@ structs and padding
 Folder: ([struct_padding](struct_padding/README.md))
 Additional knowledge-sources: t.b.d.
 
+
 time topics
--------------------
+-----------
 
 Folder: ([time topics](time_topics/README.md))
 Additional knowledge-sources: t.b.d.
+
+
+debug topics
+-------------
+
+Folder: ([debug_topics](debug_topics/README.md))
+Additional knowledge-sources: t.b.d.
+
+
+memfd topics
+-------------
+
+Folder: ([memfd_topics](memfd_topics/README.md))
+Additional knowledge-sources: t.b.d.
+
 
 
 C#

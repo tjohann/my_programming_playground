@@ -1,0 +1,5 @@
+hello_debug
+*.o
+*.i
+*.s
+*.ii
