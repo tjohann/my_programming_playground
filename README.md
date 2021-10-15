@@ -24,6 +24,12 @@ Seccomp (secure computing)
 Folder: ([seccomp](seccomp/README.md))
 Additional knowledge-sources: t.b.d.
 
+json-c
+------
+
+Folder: ([json-c](seccomp/README.md))
+Additional knowledge-sources: t.b.d.
+
 
 cgroups (control groups)
 ------------------------
