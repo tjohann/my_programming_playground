@@ -96,3 +96,15 @@ FreeBSD
 =======
 
 FreeBSD stuff
+
+
+
+Books
+=====
+
+Folder: ([System Programming with Linux (ook)](system_programming_book/README.md))
+Additional knowledge-sources: t.b.d.
+
+Folder: ([Extreme C (book)](extreme_c_book/README.md))
+Additional knowledge-sources: t.b.d.
+
