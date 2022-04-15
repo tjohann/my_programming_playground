@@ -12,6 +12,12 @@ https://progur.com/2018/12/how-to-parse-json-in-c.html
 https://www.youtube.com/watch?v=dQyXuFWylm4
 
 
+tutorials
+---------
+
+https://github.com/json-c/json-c/wiki/List-of-json-c-tutorials
+
+
 additional stuff
 ----------------
 
