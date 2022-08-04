@@ -1,6 +1,8 @@
 Some stuff around struct padding
 ================================
 
+Note: examples build on a void-linux system.
+
 The simple examples show the result of the generated code.
 
 ```the_structs

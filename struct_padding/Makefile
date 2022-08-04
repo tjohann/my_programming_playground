@@ -12,6 +12,7 @@ all: struct_padding.c
 .PHONY: clean
 clean:
 	rm -f *~
+	rm -f .*~
 	rm -f struct_padding
 	rm -f struct_padding_minimal
 

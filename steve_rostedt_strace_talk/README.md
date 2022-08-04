@@ -1,6 +1,8 @@
 some stuff around steves strace and co talk@youtube
 ===================================================
 
+Note: output files are generated on a void-linux system (AMD64)
+
 https://www.youtube.com/watch?v=JRyrhsx-L5Y
 
 

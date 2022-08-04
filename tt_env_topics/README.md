@@ -1,7 +1,7 @@
 some stuff around time triggert stuff
 =====================================
 
-t.b.d.
+Note: builds only on linux systems.
 
 additional stuff
 ----------------

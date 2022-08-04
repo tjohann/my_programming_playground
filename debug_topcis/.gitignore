@@ -1,4 +1,5 @@
 hello_debug
+hello_without_debug
 *.o
 *.i
 *.s

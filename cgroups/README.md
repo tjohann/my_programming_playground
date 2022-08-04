@@ -1,7 +1,7 @@
 some stuff around cgroups
 =========================
 
-t.b.d.
+Note: builds only on linux systems.
 
 
 some stuff

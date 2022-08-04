@@ -1,6 +1,8 @@
 System Programming with Linux (Book)
 ====================================
 
+Note: Linux centric, but also useful for FreeBSD.
+
 The book: https://www.packtpub.com/product/hands-on-system-programming-with-linux/9781788998475
 
 Link the book code repo: https://github.com/PacktPublishing/Hands-on-System-Programming-with-Linux

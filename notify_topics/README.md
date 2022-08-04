@@ -1,7 +1,7 @@
 some stuff around notify topics
 ===============================
 
-t.b.d.
+Note: builds only on linux systems.
 
 
 some stuff
