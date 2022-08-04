@@ -1,0 +1,7 @@
+hello_world
+hello_test
+minimal_prog
+*.o
+*.i
+*.s
+*.ii

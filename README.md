@@ -76,7 +76,6 @@ Folder: ([memfd_topics](memfd_topics/README.md))
 Additional knowledge-sources: t.b.d.
 
 
-
 C#
 ==
 
@@ -106,5 +105,11 @@ Folder: ([System Programming with Linux (ook)](system_programming_book/README.md
 Additional knowledge-sources: t.b.d.
 
 Folder: ([Extreme C (book)](extreme_c_book/README.md))
+Additional knowledge-sources: t.b.d.
+
+Folder: ([C++ book](c++_book_kirch_prinz/README.md))
+Additional knowledge-sources: t.b.d.
+
+Folder: ([Networlk Programming in C](network_programming_in_c_book/README.md))
 Additional knowledge-sources: t.b.d.
 
