@@ -22,9 +22,31 @@ https://github.com/json-c/json-c/wiki/List-of-json-c-tutorials
 https://github.com/rbtylee/tutorial-jsonc/blob/master/tutorial/Intro.md
 
 
+pkgconfig flags
+---------------
+
+	CFLAGS += $(shell pkg-config --cflags json-c)
+	LDFLAGS += $(shell pkg-config --libs json-c)
+
+
+useful tools
+------------
+
+jless: https://jless.io/
+
+important shortcuts:
+
+	q :quit :exit
+	:help
+
+
 summary
 -------
 
+JSON objects:
+
+	collection of key/value pair -> c language construct -> struct
+	ordered list of values -> c language construct -> array
 
 
 

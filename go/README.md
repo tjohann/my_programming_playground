@@ -9,6 +9,22 @@ Links
 https://pkg.go.dev
 
 
+setup env
+---------
+
+Default installation path for third party tools via **go install** is $HOME/go. To change it to golang use this
+
+	export GOPATH=$HOME/golang
+	export $PATH=$PATH:$GOPATH/bin
+
+
+
+useful KDO`s
+------------
+
+	go env
+
+
 
 TODO
 ----
