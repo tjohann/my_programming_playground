@@ -6,8 +6,8 @@
 all:
 	@echo "**** see Makefile for relevant build targets ****"
 
-build_stuff: hello_world.c
-	gcc -Wall -Wextra -o hello_world hello_world.c
+build_stuff: hello_world.cpp
+	g++ -Wall -Wextra -o hello_world hello_world.cpp
 
 .PHONY: clean
 clean:
