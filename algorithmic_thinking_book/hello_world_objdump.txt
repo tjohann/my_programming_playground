@@ -119,7 +119,7 @@ int main(void)
 {
     1149:	55                   	push   %rbp
     114a:	48 89 e5             	mov    %rsp,%rbp
-	cout << "Hallo \"C++ Crash Course\" Buch :-) \n";
+	cout << "Hallo \"Algorithmic Thinking\" Buch :-) \n";
     114d:	48 8d 05 b4 0e 00 00 	lea    0xeb4(%rip),%rax        # 2008 <_IO_stdin_used+0x8>
     1154:	48 89 c6             	mov    %rax,%rsi
     1157:	48 8d 05 e2 2e 00 00 	lea    0x2ee2(%rip),%rax        # 4040 <_ZSt4cout@GLIBCXX_3.4>

@@ -1,8 +1,8 @@
 #
-# c++ book "C++ Crash Course" examples/playground
+# c++ book "The Art of Writing Efficient Programs" examples/playground
 #
 
-# CFLAGS = -Wall -Wextra -std=c++23 -ggdb3 -pg -DDEBUG=1
+
 CFLAGS = -Wall -Wextra -std=c++23 -ggdb3 -DDEBUG=1
 LDLIBS =
 
