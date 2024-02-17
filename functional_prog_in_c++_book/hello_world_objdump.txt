@@ -53,7 +53,7 @@ Disassembly of section .text:
     107b:	ff 15 47 2f 00 00    	call   *0x2f47(%rip)        # 3fc8 <__libc_start_main@GLIBC_2.34>
     1081:	f4                   	hlt
     1082:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
-    1089:	00 00 00
+    1089:	00 00 00 
     108c:	0f 1f 40 00          	nopl   0x0(%rax)
 
 0000000000001090 <deregister_tm_clones>:
@@ -93,7 +93,7 @@ Disassembly of section .text:
     110b:	75 2b                	jne    1138 <__do_global_dtors_aux+0x38>
     110d:	55                   	push   %rbp
     110e:	48 83 3d aa 2e 00 00 	cmpq   $0x0,0x2eaa(%rip)        # 3fc0 <__cxa_finalize@GLIBC_2.2.5>
-    1115:	00
+    1115:	00 
     1116:	48 89 e5             	mov    %rsp,%rbp
     1119:	74 0c                	je     1127 <__do_global_dtors_aux+0x27>
     111b:	48 8b 3d f6 2e 00 00 	mov    0x2ef6(%rip),%rdi        # 4018 <__dso_handle>
@@ -119,7 +119,7 @@ int main(void)
 {
     1149:	55                   	push   %rbp
     114a:	48 89 e5             	mov    %rsp,%rbp
-	cout << "Hallo \"C++ Move Semantic\" Buch :-) \n";
+	cout << "Hallo \"Functional Programming in C++\" Buch :-) \n";
     114d:	48 8d 05 b4 0e 00 00 	lea    0xeb4(%rip),%rax        # 2008 <_IO_stdin_used+0x8>
     1154:	48 89 c6             	mov    %rax,%rsi
     1157:	48 8d 05 e2 2e 00 00 	lea    0x2ee2(%rip),%rax        # 4040 <_ZSt4cout@GLIBCXX_3.4>
