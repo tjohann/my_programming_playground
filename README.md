@@ -110,6 +110,8 @@ Additional knowledge-sources: t.b.d.
 Folder: ([C++ book](c++_book_kirch_prinz/README.md))
 Additional knowledge-sources: t.b.d.
 
-Folder: ([Networlk Programming in C](network_programming_in_c_book/README.md))
+Folder: ([Network Programming in C](network_programming_in_c_book/README.md))
 Additional knowledge-sources: t.b.d.
 
+Folder: ([Embedded and Realtime Operation Systems](wang_book/README.md))
+Additional knowledge-sources: t.b.d.
