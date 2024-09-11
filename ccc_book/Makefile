@@ -2,26 +2,39 @@
 # c++ book "C++ Crash Course" examples/playground
 #
 
-# CFLAGS = -Wall -Wextra -std=c++23 -ggdb3 -pg -DDEBUG=1
-CFLAGS = -Wall -Wextra -std=c++23 -ggdb3 -DDEBUG=1
-LDLIBS =
+MODULES = $(shell ls -d */ | cut -f1 -d'/')
 
-.PHONY: all
-all:
-	@echo "**** see Makefile for relevant build targets ****"
+CC = /opt/gcc-latest/bin/g++
+CFLAGS = -Wall -Wextra -std=c++23 -O2
 
-build: hello_world
+PROG_01 = hello_world
+OBJ_01 = hello_world.o
+
+PROG_02 = pre_listing_01
+OBJ_02 = pre_listing_01.o
+
+%.o: %.cc
+	$(CC) -c -o $@ $< $(CFLAGS)
+	$(CC) -S $< $(CFLAGS)
 
 
-hello_world: hello_world.cc
-	g++ $(CFLAGS) $(LDLIBS) -o $@ hello_world.cc
+all: $(PROG_01) $(PROG_02)
+
+$(PROG_01): $(OBJ_01)
+	$(CC) -o $@ $^ -lc
+
+$(PROG_02): $(OBJ_02)
+	$(CC) -o $@ $^ -lc
 	objdump -S $@ -a > $@_objdump.txt
 
-
-.PHONY: clean
 clean:
-	rm -f *~
-	rm -f hello_world
-
+	rm -rf *~ .*~
+	rm -rf *.o
+	rm -rf *.s
+	rm -rf $(PROG_01)
+	rm -rf $(PROG_02)
+	for dir in $(MODULES); do (cd $$dir && $(MAKE) $@); done
 
 distclean: clean
+
+.PHONY: clean
