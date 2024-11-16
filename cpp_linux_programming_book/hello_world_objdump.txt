@@ -47,13 +47,13 @@ Disassembly of section .text:
   40106b:	ff 15 67 2f 00 00    	call   *0x2f67(%rip)        # 403fd8 <__libc_start_main@GLIBC_2.34>
   401071:	f4                   	hlt
   401072:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
-  401079:	00 00 00 
+  401079:	00 00 00
   40107c:	0f 1f 40 00          	nopl   0x0(%rax)
 
 0000000000401080 <_dl_relocate_static_pie>:
   401080:	c3                   	ret
   401081:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
-  401088:	00 00 00 
+  401088:	00 00 00
   40108b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
 
 0000000000401090 <deregister_tm_clones>:
@@ -68,7 +68,7 @@ Disassembly of section .text:
   4010ae:	66 90                	xchg   %ax,%ax
   4010b0:	c3                   	ret
   4010b1:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
-  4010b8:	00 00 00 00 
+  4010b8:	00 00 00 00
   4010bc:	0f 1f 40 00          	nopl   0x0(%rax)
 
 00000000004010c0 <register_tm_clones>:
@@ -87,7 +87,7 @@ Disassembly of section .text:
   4010ee:	ff e0                	jmp    *%rax
   4010f0:	c3                   	ret
   4010f1:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
-  4010f8:	00 00 00 00 
+  4010f8:	00 00 00 00
   4010fc:	0f 1f 40 00          	nopl   0x0(%rax)
 
 0000000000401100 <__do_global_dtors_aux>:
@@ -103,7 +103,7 @@ Disassembly of section .text:
   40111f:	90                   	nop
   401120:	c3                   	ret
   401121:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
-  401128:	00 00 00 00 
+  401128:	00 00 00 00
   40112c:	0f 1f 40 00          	nopl   0x0(%rax)
 
 0000000000401130 <frame_dummy>:

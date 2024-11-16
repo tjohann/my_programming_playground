@@ -63,7 +63,7 @@ Disassembly of section .text:
     109b:	ff 15 27 2f 00 00    	call   *0x2f27(%rip)        # 3fc8 <__libc_start_main@GLIBC_2.34>
     10a1:	f4                   	hlt
     10a2:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
-    10a9:	00 00 00 
+    10a9:	00 00 00
     10ac:	0f 1f 40 00          	nopl   0x0(%rax)
 
 00000000000010b0 <deregister_tm_clones>:
@@ -103,7 +103,7 @@ Disassembly of section .text:
     112b:	75 2b                	jne    1158 <__do_global_dtors_aux+0x38>
     112d:	55                   	push   %rbp
     112e:	48 83 3d 8a 2e 00 00 	cmpq   $0x0,0x2e8a(%rip)        # 3fc0 <__cxa_finalize@GLIBC_2.2.5>
-    1135:	00 
+    1135:	00
     1136:	48 89 e5             	mov    %rsp,%rbp
     1139:	74 0c                	je     1147 <__do_global_dtors_aux+0x27>
     113b:	48 8b 3d d6 2e 00 00 	mov    0x2ed6(%rip),%rdi        # 4018 <__dso_handle>
