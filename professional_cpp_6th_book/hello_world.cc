@@ -1,5 +1,5 @@
 /*
- * up to side 11
+ * up to side 15
  */
 
 /*
@@ -12,6 +12,7 @@
 #include <print>
 #include <string>
 #include <iostream>
+#include <cstddef>
 
 namespace my_func {
 	// no need to use std::
@@ -37,6 +38,19 @@ int main(void)
 	my_func::foo();
 	// using directive
 	foo();
+
+	/*
+	 * std::byte
+	 * it's not a character nor a arithmetic type
+	 * only for bit operations!
+	 * -> cast for println needed
+	 */
+	std::byte my_byte {10};
+	std::println("Value of byte: {}", to_integer<int>(my_byte));
+	// note: won't work!
+	//if (my_byte != 0)
+	//	std::println("Value of byte: {}", to_integer<int> my_byte);
+
 
 	exit (EXIT_SUCCESS);
 }
