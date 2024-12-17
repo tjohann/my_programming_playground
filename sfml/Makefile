@@ -5,7 +5,7 @@
 MODULES = $(shell ls -d */ | cut -f1 -d'/')
 
 CC = g++
-CFLAGS = -Wall -Wextra `pkg-config --flags sfml-all`
+CFLAGS = -Wall -Wextra `pkg-config --cflags sfml-all`
 LIBS = `pkg-config --libs sfml-all`
 
 PROG_01 = hello_world
